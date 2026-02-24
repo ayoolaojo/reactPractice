@@ -1,0 +1,20 @@
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #f5f3ff, #ede9fe);
+}
+
+.home h1 {
+  font-size: 3rem;
+  color: #4b0082;
+}
+
+.home p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}

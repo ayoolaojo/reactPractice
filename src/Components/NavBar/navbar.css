@@ -1,0 +1,26 @@
+nav {
+    height: 15vh;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3rem;
+
+
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 5rem;
+}
+
+nav ul li a  {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+}

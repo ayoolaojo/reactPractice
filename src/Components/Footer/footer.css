@@ -1,0 +1,48 @@
+
+.footer {
+  /* background-color: #4b0082; deep purple */
+  color: purple;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.footer-container {
+  max-width:100%;
+  margin: auto;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-icons svg {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icons svg:hover {
+  transform: translateY(-4px);
+  color: #ffd700; /* gold accent */
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}

@@ -1,0 +1,11 @@
+.about {
+  padding: 5rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h1 {
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
