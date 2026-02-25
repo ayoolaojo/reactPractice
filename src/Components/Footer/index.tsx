@@ -1,6 +1,7 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import "./footer.css"
 
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -22,6 +23,7 @@ const Footer = () => {
           © {new Date().getFullYear()} ReactPractice. All rights reserved.
         </p>
       </div>
+      
     </footer>
   )
 }

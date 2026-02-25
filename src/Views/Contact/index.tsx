@@ -1,10 +1,13 @@
 
 
+import "./contact.css"
+
 const Contact = () => {
   return (
-    <div>
-        This is Contact page
-    </div>
+    <section className="contact">
+      <h1>Contact Us</h1>
+      <p>Email: support@reactpractice.dev</p>
+    </section>
   )
 }
 

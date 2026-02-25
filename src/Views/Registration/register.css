@@ -1,0 +1,46 @@
+/* Reuse same structure for consistency */
+.auth {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #f5f3ff, #ede9fe);
+}
+
+.auth-card {
+  background: white;
+  padding: 3rem;
+  width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-card h1 {
+  color: #4b0082;
+  margin-bottom: 0.5rem;
+}
+
+.auth-card p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.auth-card input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #4b0082;
+}

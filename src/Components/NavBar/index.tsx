@@ -20,9 +20,24 @@ const NavBar = () => {
             
         </ul>
 
-      <Button text = 'Login ' color="purpleblue"
+      <button>
+        <Link to='/login'>
+        
+        <Button isCurved = {true}  text = 'Login ' color="purpleblue"
       />
-      <Button text = 'Register' isCurved/>
+      </Link>
+      </button>
+
+      
+
+      <button>
+        <Link to='/register'>
+        
+        <Button isCurved text = 'Register ' color="purpleblue"
+      />
+      </Link>
+      </button>
+      
       
     </nav>
   )
