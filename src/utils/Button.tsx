@@ -17,8 +17,8 @@ const Button = ({text,isCurved = false,bg= 'white',color='blue',ht=40,wt=100}:Bu
         backgroundColor:bg,
         color:color,
         borderRadius: isCurved? 10 : 0,
-        border:0,
-        fontSize:16,
+        border:'none',
+        fontSize:'1rem',
         fontWeight:600,
         
         

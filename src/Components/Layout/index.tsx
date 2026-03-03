@@ -5,17 +5,25 @@ import Footer from "../Footer";
 import("./layout.css");
 import("../../index.css");
 
-const Layout = () => {
+
+type LayoutProps = {
+  
+  showNavbar?: boolean,
+  showFooter?: boolean,
+
+};
+
+const Layout = ({showFooter = true, showNavbar = true}:LayoutProps) => {
   return (
     <div className="layout">
       <header>
-        <NavBar />
+         {showNavbar && <NavBar />}
       </header>
       <main>
-        <Outlet />
+        <Outlet /> 
       </main>
       <footer>
-        <Footer />
+        {  showFooter &&<Footer/>  }
       </footer>
     </div>
   );

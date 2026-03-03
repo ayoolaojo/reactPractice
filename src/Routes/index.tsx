@@ -12,14 +12,18 @@ import Register from "../Views/Registration"
 const AppRouter = () => {
   return (
     <Routes>
-        <Route path="/" element ={<Layout/>}>
-          <Route path="/" element = {<Home/>}/>
-          <Route path="/home" element = {<Home/>}/>
-          <Route path="/about" element = {<About/>}/>
-          <Route path="/products" element = {<Products/>}/>
-          <Route path="/contact" element = {<Contact/>}/>
-          <Route path="/login" element = {<Login/>}/>
-          <Route path="/register" element = {<Register/>}/>
+        <Route  element ={<Layout/>}>
+          <Route index element = {<Home/>}/>
+          <Route path="home" element = {<Home/>}/>
+          <Route path="about" element = {<About/>}/>
+          <Route path="products" element = {<Products/>}/>
+          <Route path="contact" element = {<Contact/>}/>
+         
+        </Route>
+
+        <Route  element = {<Layout showFooter = {false} showNavbar = {false}/>}>
+           <Route path="login" element = {<Login/>}/>
+          <Route path="register" element = {<Register/>}/>
 
         </Route>
       
