@@ -1,5 +1,6 @@
 
 import Alert from "../../Alert"
+import HooksPractice from "../../Components/HooksPractice"
 import "./home.css"
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <p>Your home</p>
 
       </Alert>
+      <HooksPractice/>
       
      
     </section>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./navbar.css"
-import Button from "../../utils/Button"
+import Button from "../../Utils/Button"
 
 const NavBar = () => {
   return (

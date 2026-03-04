@@ -1,6 +1,6 @@
 
 
-import Button from "../../utils/Button"
+import Button from "../../Utils/Button"
 import "./register.css"
 
 
