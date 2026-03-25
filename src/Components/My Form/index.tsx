@@ -2,33 +2,36 @@ import { useState } from "react"
 
 
 const MyForm = () => {
-       const [inputData,setInputData] = useState({
-          fullName : '',
-          email:'',
-          password: '',
-          phone: '',
-          age : '',
 
+  const [formData, setFormData] = useState({
+    fullname: '',
+    email : '',
+    password : '',
+    phone: '',
+    age : ''
 
-       })
+  })
 
-       const handleInput = (e:React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-          const {name, value} = e.target
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+     const {name,value} = e.target
+    //  setFormData({
+    //   ...formData ,
+    //   [name]: value,
+    //  })
+    setFormData(prev=>({
+      ...prev , 
+      [name] :value
+    }))
+  }
 
-          setInputData((prev)=>({
-            ...prev ,
-             [name] : value
-          }))
-       }
-
-       const handleSubmit = (e:React.FormEvent)=> {
-        e.preventDefault()
-        console.log(inputData)
-
-       }
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement> ) => {
+    e.preventDefault()
+    console.log(formData)
+  }
+       
   
   return (
-    <div className="flex flex-col jutify-center align-center ">
+    <div className="flex flex-col justify-center items-center ">
            <h1>Registration Form</h1>
            <form  action="" onSubmit={handleSubmit}>
              <input type="text" placeholder="Full name" name="fullname" onChange={handleInput}/>  <br /> <br />
