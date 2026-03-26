@@ -9,7 +9,7 @@ const MyNewForm = () => {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     const { name,value } = e.target;
     setFormData((prev)=>({
@@ -24,12 +24,12 @@ const MyNewForm = () => {
      console.log(formData)
   }
   return (
-    <form className="h-[50vh] w-full bg-blue-700 flex flex-col justify-center items-center">
+    <form onSubmit={handleSubmit} className="h-[50vh] w-full bg-blue-700 flex flex-col justify-center items-center">
       <input onChange={handleInputChange} type="text" placeholder="fullName" name="fullName" /> <br /> <br />
       <input onChange={handleInputChange} type="text" placeholder="email" name="email" /> <br /> <br />
       <input onChange={handleInputChange} type="text" placeholder="Phone" name="Phone" /> <br /> <br />
       <input onChange={handleInputChange} type="text" placeholder="Location" name="location" /> <br /> <br />
-      <button type="submit" onSubmit={handleSubmit}></button>
+      <button type="submit">Submit</button> 
     </form>
   );
 };
